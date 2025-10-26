@@ -19,7 +19,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=frontend"
-      - "traefik.http.routers.http-srv.rule=Host(`${HTTP-SRV_FQDN}`)"
+      - "traefik.http.routers.http-srv.rule=Host(`${HTTP_SRV_FQDN}`)"
       - "traefik.http.routers.http-srv.entrypoints=websecure"
       - "traefik.http.routers.http-srv.tls=true"
       - "traefik.http.routers.http-srv.tls.certresolver=route53"
