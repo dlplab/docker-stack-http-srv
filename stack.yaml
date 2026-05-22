@@ -7,7 +7,7 @@ networks:
 
 services:
   http-srv:
-    image: nginx:alpine
+    image: nginx:stable-alpine
     networks: ['frontend','http-srv']
     container_name: http-srv
     restart: unless-stopped
